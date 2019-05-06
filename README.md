@@ -1,6 +1,7 @@
 # TODO
 
-监听系统开机广播，实现开机自启
+监听系统开机广播，实现开机自启  
+```java
 <receiver android:name=".receiver.BootCompletedBroadcastReceiver">
     <intent-filter>
         <action android:name="android.intent.action.BOOT_COMPLETED" />
@@ -15,7 +16,9 @@ public class BootCompletedBroadcastReceiver extends BroadcastReceiver {
         }
     }
 }
-监听应用更新广播，实现更新自启
+```
+监听应用更新广播，实现更新自启  
+```java
 <!-- 应用更新广播接收器 -->
 <receiver android:name=".receiver.PackageReplacedBroadcastReceiver">
     <intent-filter>
@@ -31,3 +34,4 @@ public class PackageReplacedBroadcastReceiver extends BroadcastReceiver {
         }
     }
 }
+```
